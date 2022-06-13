@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+    /* font-family: 'Fraunces', serif; */
+    font-family: 'Barlow', sans-serif;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+}
+
+/* --------- fonts -------------- */
+header section h2, h3, h4{
+    font-family: 'Fraunces', sans-serif;
+}
+
+p{
+    font-size: 13.5px;
+    color: hsl(234, 4.2%, 46.3%);
+}
+
+.client-testimonials h3{
+    color: hsl(232, 10%, 55%);
+    text-transform: uppercase;
+    margin: 6rem 0 3rem 0;
+    text-align: center;
+    font-size: medium;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.text p{
+    margin-top: 1.5rem;
+}
+
+
+
+
+/* --------------------- header ------------------------ */
+
+header{
+    position: relative;
+    background: url(/images/desktop/image-header.jpg) no-repeat;
+    overflow: hidden;
+    background-size: 100% 100%;
+    padding-bottom: 27.5em;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo, nav ul{
+    margin: 1.5rem;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 32rem;
+}
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+}
+nav ul .contact  a{
+    color: black;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: medium;
+    font-family: 'Fraunces', sans-serif;
+}
+nav ul .contact{
+    border-radius: 40px;
+    padding: 16px 25px;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+header section h2{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-weight: 900;
+    font-size: 40px;
+    transform: translateY(1.5em);
+}
+
+.arrow img{
+    width: 25px;
+    height: 5em;
+    position: absolute;
+    transform: translateY(8em);
+}
+
+header > section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* ------------------ main --------------------- */
+main > section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+main > section img{
+    width: 100%;
+}
+
+main section > .text{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   max-width:fit-content;
+   padding: 0 5em;
+}
+main section > .text h3{
+    align-self: flex-start;
+    font-size: 2.3rem;
+}
+main .graphic-photo h3{
+    font-size: 2rem;
+}
+
+main section > .text a{
+    margin-top: 2.5rem;
+    align-self: flex-start;
+    text-decoration: none;
+    color: black;
+    font-family: 'Fraunces', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: 900;
+}
+
+
+
+
+
+.graphic-design, .photography{
+    position: relative;
+}
+main .graphic-photo .text{
+    position: absolute;
+    width: 54%;
+    text-align: center;
+    left: 50%;
+    top: 69%;
+    transform: translateX(-50%);
+}
+
+.graphic-design, .graphic-design p{
+    color: hsl(167, 40%, 24%);
+}
+
+.photography, .photography p{
+    color: hsl(198, 62%, 26%);
+}
+
+
+/* ------------------- client-testimonials --------------------- */
+.profiles{
+    display: flex;
+    justify-content: space-around;
+}
+.profiles section{
+    max-width: 300px;
+    text-align: center;
+    font-size: smaller;
+}
+.profiles img{
+    border-radius: 50%;
+    width: 50px;
+    display: block;
+    margin: 1rem auto 3rem auto;
+}
+.profiles .name{
+    margin-top: 3rem;
+}
+.profiles .name h4{
+    letter-spacing: 1px;
+}
+.profiles .name p{
+    margin-top: .5rem;
+    font-size: 11px;
+    color: hsl(230, 3.7%, 68.2%);
+}
+
+
+
+
+/* ---------------------- footer ------------------------ */
+footer{
+    background-color: #90d4c5;
+}
+footer nav ul li a{
+    color: hsl(168, 34%, 41%);
+}
+
+footer .footer-images{
+    display: flex;
+    margin-top: 8rem;
+}
+.footer-images img{
+    width: 25%;
+}
+
+
+footer .main-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3em;
+    min-height: 50vh;
+    text-align: center;
+}
+
+footer .main-footer nav ul{
+    margin: 0.5rem;
+    width: 22rem;
+}
+
+
+.contacts img{
+    padding: 4em 0.8em 0 0.8em;
+}
+
+/* ------------------- hover ------------------------ */
+nav ul li:hover a{
+    color: black;
+}
+
+nav ul .contact:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.contact:hover a{           /* important */
+    color: white;
+}
+
+
+.text a{
+    position: relative;
+}
+
+.text a::after{
+    content: '';
+    width: 108%;
+    height: 7px;
+    position: absolute;
+    bottom: -1px;
+    left: -5px;
+    z-index: -1;
+    border-radius: 3px;
+}
+
+.transform-text a::after{
+    background-color: hsl(51, 100%, 85%);
+}
+.stand-out-text a::after{
+    background-color: hsl(7, 99%, 90%);
+} 
+
+.transform-text a:hover::after{
+    background-color: hsl(51, 100%, 49%);
+}
+
+.stand-out-text a:hover::after{
+    background-color: hsl(7, 99%, 70%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
