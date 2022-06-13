@@ -47,7 +47,7 @@ p{
 
 header{
     position: relative;
-    background: url(/images/desktop/image-header.jpg) no-repeat;
+    background: url(./images/desktop/image-header.jpg) no-repeat;
     overflow: hidden;
     background-size: 100% 100%;
     padding-bottom: 27.5em;
